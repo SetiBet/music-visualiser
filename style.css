@@ -1,0 +1,46 @@
+/* Remove default margins and center content */
+body {
+    margin: 0;
+    background: black;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+}
+
+/* Style the file upload button */
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 2px solid white;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+/* Make sure the file input text is visible */
+input[type="file"]::file-selector-button {
+    background: white;
+    color: black;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background: gray;
+    color: white;
+}
+
+/* Style the canvas */
+canvas {
+    display: block;
+    border: 1px solid white;
+    width: 90%;
+    max-width: 800px;
+    height: 400px;
+}
